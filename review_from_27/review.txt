@@ -1,0 +1,7 @@
+Review from Group 27
+
+Overall our group thought Group 29’s report was very thorough and well-written. They presented the results of their experiments in a concise manner; examples of which include plotting the outcomes of their attempts on top of each other and having a table with the speedups from compiler flags. The discussion about why some compiler flags worked better than others was detailed and easy to follow. The group attempted to try almost all the material discussed in lecture--with the exception of copy optimization--and improved their codes’ performance in almost every attempt.
+
+We identified a few areas of improvement for the next report. First, while plotting the performance of different configurations on the same graph was helpful, the plot with varying block sizes was overly cluttered. The point about the effectiveness of different block sizes could be made more clearly if there were fewer block sizes plotted. Second, the section describing AVX was very brief and hard to understand; it should be rewritten. Lastly, more could be said about why exactly memory alignment improves the speed of AVX.
+
+We would also recommend that the group consider experimenting with two layers of blocking to see if they can further improve the performance.
