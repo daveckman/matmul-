@@ -1,0 +1,8 @@
+Good things:
+    - Analysis of loop ordering is really good. Not only that you tried a bunch of possible orderings, but also that you went through the theoretical reasons why each order is good for cache consistency or not.
+    - Testing of copy optimization is pretty good. It makes sense that there were inefficiencies at low dimension as the copy optimized block is only used once instead of repeatedly. I'm curious as to why copy optimization didn't seem to improve performance though, we found huge improvements when we used copy optimization.
+
+Things to work on:
+    - More work on blocking. You all worked on optimizing block size, but could also try using multiple levels of blocks that could each fit into L3, L2, L1, etc. to take advantage of every cache instead of choosing which cache to use.
+    - More exploration of optimization flags? There are a lot of flags that might help, though I'm not sure which ones as I haven't had much success myself!
+    - Definitely try to implement vectorized operations. Using intel's vector operations is something that should improve performance a lot, particularly if the compiler isn't currently converting any of your instructions into vectorized ones. We haven't done this yet, but plan to.
